@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  
+  "redirects": [
+    { "source": "/games", "destination": "https://purplehacker.com" },
+    { "source": "/settings", "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVOs" }
+  ]
+}

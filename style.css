@@ -1,0 +1,275 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111111;
+    text-align:center
+}
+h1 {
+    color: #8646fe; 
+    font-size:80px;
+    
+}
+.header {
+    color: #8646fe;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+    animation-name: underAfter;
+    animation-duration: .3s;   
+    animation-fill-mode: both;
+}
+.header:hover {
+    text-decoration: underline;
+    animation-name: underFade;
+    animation-duration: 1s;   
+    animation-fill-mode: both;
+}
+
+@keyframes underFade {
+    0% {
+        text-decoration-color: #111111;
+    }
+    100% {
+        text-decoration-color: #9c68fd;
+    }
+}
+@keyframes underAfter {
+    0% {
+        text-decoration-color: #9c68fd;
+    }
+    100% {
+        text-decoration-color: #111111;
+    }
+    
+}
+
+p {
+    color: #d8d8d8; 
+    font-size: 15px;
+    margin-top: 2%;
+
+}
+.navtext {
+    color: #d8d8d8; 
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s ease-out 100ms;
+    margin-right: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  hr {
+    border-style: none;
+    border-radius: 1rem;
+    width: 0.5rem; height: 0.5rem;
+    background-color: rgb(46, 47, 56);
+    animation-name: extend;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    align-self: center;
+    width:100px; 
+    margin: auto;
+  }
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
+
+  .social-button {
+    
+    
+}
+
+@keyframes extend {
+    10% {
+      background-color:#111111;
+      width: 0rem;
+    }
+    100% {
+      width: 50%;
+      background-color: rgb(46, 47, 56);
+    }
+  }
+  .drop1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 1s;
+    animation-delay: .3s;   
+    animation-fill-mode: both;
+  }
+  @keyframes drop1 {
+    0%   {color:#111111;top:20px;}
+    100% {color: #d8d8d8;top:0px;}
+  }
+  .drop2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 1s;
+    animation-delay: .6s;
+    animation-fill-mode: both;
+  }
+  .drop3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 1s;
+    animation-delay: .9s;
+    animation-fill-mode: both;
+  }
+  .drop4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: drop1;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+  }
+  .underline {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    height: 40px;
+  }
+  .underline:after {
+    content: '';
+    position: absolute;
+    width: 105%;
+    transform: scaleX(0);
+    transform: scaleY();
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .u1:after {
+    background-color: #ff5454;
+  }
+  .u2:after {
+    background-color: #ffa754;
+  }
+  .u3:after {
+    background-color: #fff954;
+  }
+  .u4:after {
+    background-color: #5fff54;
+  }
+
+/* Hover animation by Ian Lunn*/
+.hover-outset {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hover-outset:hover, .hover-outset:focus, .hover-outset:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .fade-in {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .social-button {
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+    margin:auto;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .fab {
+    margin: 1%;
+  }
+  @keyframes socialyt {
+    0%   {color:#111111;font-size:0px;background-color: #111111;width:0%;height:0%;color: #111111;}
+    100% {color: #d8d8d8;font-size:20px;background-color:#ff0000;width:2.5%;height:4.75%;color: white;}
+  }
+  .yt {
+    animation-name: socialyt;
+  }
+  @keyframes socialinsta {
+    0%   {color:#111111;font-size:0px;background-color: #111111;width:0%;height:0%;color: #111111;}
+    100% {color: #d8d8d8;font-size:20px;background-color:#E1306C;width:2.5%;height:4.75%;color: white;}
+  }
+  .insta {
+    animation-name: socialinsta;
+  }
+  @keyframes socialsteam {
+    0%   {color:#111111;font-size:0px;background-color: #111111;width:0%;height:0%;color: #111111;}
+    100% {color: #d8d8d8;font-size:20px;background-color:#00ADEE;width:2.5%;height:4.75%;color: white;}
+  }
+  .steam {
+    animation-name: socialsteam;
+  }
+  @keyframes socialgithub {
+    0%   {color:#111111;font-size:0px;background-color: #111111;width:0%;height:0%;color: #111111;}
+    100% {color: #d8d8d8;font-size:20px;background-color:#6E5494;width:2.5%;height:4.75%;color: white;}
+  }
+  .github {
+    animation-name: socialgithub;
+  }
+  .email {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .email:hover {
+    text-decoration: underline;
+
+  }

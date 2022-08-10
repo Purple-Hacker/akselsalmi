@@ -14,7 +14,7 @@
 </head>
 <body>
     <br>
-    <a href="/index.html"><h1 class="animate__animated animate__fadeInDown">Aksel Salmi</h1></a>
+    <a href="/index.html"><h1 id="header">Aksel Salmi</h1></a>
     <hr><br>
     <nav style="display: flex;align-items: center;justify-content: center;">
         <a class="drop1 underline u1 navtext hover-outset" href="/">Home</a> 
@@ -33,4 +33,11 @@
     
 
 </body>
+<script>
+    let elementThatNeedsTheAnimation = document.querySelector('#header')
+    if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
+        elementThatNeedsTheAnimation.classList.add('animate__animated', "animate__fadeInDown")
+    }
+    localStorage.setItem('animated', Date.now().toString())
+</script>
 </html>

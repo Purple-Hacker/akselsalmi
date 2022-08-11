@@ -17,13 +17,13 @@
     <a href="/index.html"><h1 id="header">Aksel Salmi</h1></a>
     <hr><br>
     <nav style="display: flex;align-items: center;justify-content: center;">
-        <a class="drop1 underline u1 navtext hover-outset" href="/">Home</a> 
-        <a class="drop2 underline u2 navtext hover-outset" href="/about.html">About</a>
-        <a class="drop3 underline u3 navtext hover-outset" href="/projects.html">Projects</a>&nbsp;&nbsp;
-        <a class="drop4 underline u4 navtext hover-outset">Contact</a>
+        <a class="underline u1 navtext hover-outset" href="/" id="drop1">Home</a> 
+        <a class="underline u2 navtext hover-outset" href="/about.html" id="drop2">About</a>
+        <a class="underline u3 navtext hover-outset" href="/projects.html" id="drop3">Projects</a>&nbsp;&nbsp;
+        <a class="underline u4 navtext hover-outset" id="drop4">Contact</a>
     </nav>
     <p class="fade-in">Contact me here:</p>
-    <a class="social-button email fade-in" href="mailto:a@akselsalmi.com">a@akselsalmi.com <i class="fas fa-envelope"></i></a>
+    <a class="social-button email fade-in" href="mailto:a@akselsalmi.com"> <i class="fas fa-envelope"></i> a@akselsalmi.com</a>
 
     <p class="fade-in">Or you can find me here:</p>
     <a class="social-button yt" href="https://youtube.com/purpledhacker"><i class="fab fa-youtube"></i></a>
@@ -34,9 +34,17 @@
 
 </body>
 <script>
-    let elementThatNeedsTheAnimation = document.querySelector('#header')
+    let header = document.querySelector('#header')
+    let drop1 = document.querySelector('#drop1')
+    let drop2 = document.querySelector('#drop2')
+    let drop3 = document.querySelector('#drop3')
+    let drop4 = document.querySelector('#drop4')
     if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
-        elementThatNeedsTheAnimation.classList.add('animate__animated', "animate__fadeInDown")
+        header.classList.add('animate__animated', "animate__fadeInDown")
+        drop1.classList.add("drop1")
+        drop2.classList.add("drop2")
+        drop3.classList.add("drop3")
+        drop4.classList.add("drop4")
     }
     localStorage.setItem('animated', Date.now().toString())
 </script>

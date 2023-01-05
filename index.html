@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&display=swap'); </style>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
@@ -21,7 +21,7 @@
     </a>
     <hr><br>
     <nav style="display: flex;align-items: center;justify-content: center;">
-        <a class="underline u1 navtext hover-outset">Home</a>
+        <a class="underline u1 navtext hover-outset selected">Home</a>
         <a class="underline u2 navtext hover-outset" href="/about.html">About</a>
         <a class="underline u3 navtext hover-outset" href="/projects.html">Projects</a>&nbsp;&nbsp;
         <a class="underline u4 navtext hover-outset" href="contact.html">Contact</a>
@@ -35,6 +35,7 @@
     let drop3 = document.querySelector('#drop3')
     let drop4 = document.querySelector('#drop4')
     if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
+        header.classList.add('animate__animated', "animate__fadeInDown")
         drop1.classList.add("drop1")
         drop2.classList.add("drop2")
         drop3.classList.add("drop3")

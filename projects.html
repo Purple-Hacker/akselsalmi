@@ -7,21 +7,30 @@
     <title>Aksel Salmi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&display=swap'); </style>
     <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <br>
-    <a href="/index.html"><h1 id="header">Aksel Salmi</h1></a>
+    <a href="/index.html"><h1>Aksel Salmi</h1></a>
     <hr><br>
     <nav style="display: flex;align-items: center;justify-content: center;">
         <a class="underline u1 navtext hover-outset" href="/">Home</a> 
         <a class="underline u2 navtext hover-outset" href="/about.html">About</a>
-        <a class="underline u3 navtext hover-outset">Projects</a>&nbsp;&nbsp; 
+        <a class="underline u3 navtext hover-outset selected">Projects</a>&nbsp;&nbsp; 
         <a class="underline u4 navtext hover-outset" href="contact.html">Contact</a>
     </nav>
-    <p class="fade-in">This is the projects page, but right now it's just this placeholder text.</p>
+    <h2 class="fade-in">Blender</h2>
+        <h3 class="fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et diam vitae elit accumsan volutpat in id sem. Quisque aliquet diam id purus vehicula ornare. Phasellus auctor lacus diam, eu dignissim est varius at. Ut vitae purus luctus mi auctor finibus eu vitae odio. Vestibulum sed dui ac nunc feugiat hendrerit. Sed vel quam efficitur, porta sapien eu, tincidunt libero. Fusce volutpat in nibh egestas congue. Nam vel arcu purus. Phasellus volutpat condimentum pulvinar. Vestibulum ac nulla nulla. In in sollicitudin felis, at iaculis odio.</h3>
+        <br>
+        <h3 class="fade-in bold">Creating a city</h3>
+        <div class="aligncenter">
+            <div class="fade-in alignleft" title="Blender city"><img class="images" src="assets/blendercityWSR.png" height="225"><iframe class="images" src="https://drive.google.com/file/d/1MmtrNLD7kQIUn2xhsVE4eZU1zMsO3xnX/preview" width="400" height="225" allow="autoplay"></iframe>
+        </div>
+        <br>
+        <h3 class="fade-in alignleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et diam vitae elit accumsan volutpat in id sem. Quisque aliquet diam id purus vehicula ornare. Phasellus auctor lacus diam, eu dignissim est varius at. Ut vitae purus luctus mi auctor finibus eu vitae odio. Vestibulum sed dui ac nunc feugiat hendrerit. Sed vel quam efficitur, porta sapien eu, tincidunt libero. Fusce volutpat in nibh egestas congue. Nam vel arcu purus. Phasellus volutpat condimentum pulvinar. Vestibulum ac nulla nulla. In in sollicitudin felis, at iaculis odio.</h3>
 </body>
 <script>
     let header = document.querySelector('#header')
@@ -30,6 +39,7 @@
     let drop3 = document.querySelector('#drop3')
     let drop4 = document.querySelector('#drop4')
     if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
+        header.classList.add('animate__animated', "animate__fadeInDown")
         drop1.classList.add("drop1")
         drop2.classList.add("drop2")
         drop3.classList.add("drop3")

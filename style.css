@@ -1,21 +1,62 @@
+:root {
+  --primary: #00676d;
+  --accent: #5743b2;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #111111;
-    text-align:center
+    text-align:center;
+    color: #d8d8d8;
 }
 h1 {
     color: #8646fe; 
     font-size:80px;
     
 }
+
+h2 {
+    color: #e2e2e2; 
+    font-size: 40px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-bottom: 2%;
+    font-family: 'IBM Plex Serif', serif; 
+}
+h3 {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.alignleft {
+    text-align: left; 
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.aligncenter {
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+}
 .header {
     color: #8646fe;
     text-align: center;
     padding: 20px;
     text-decoration: underline;
-    animation-name: underAfter;
+    /* animation-name: underAfter;
     animation-duration: .3s;   
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
 .header:hover {
     text-decoration: underline;
@@ -46,7 +87,7 @@ p {
     color: #d8d8d8; 
     font-size: 15px;
     margin-top: 2%;
-
+    font-family: 'IBM Plex Serif', serif;
 }
 .navtext {
     color: #d8d8d8 !important; 
@@ -145,6 +186,13 @@ p {
     color: #0087ca;
     height: 40px;
   }
+
+  .selected {
+    color: #ffffff !important;
+    filter: drop-shadow(0px 0px .5rem #9180e9);
+
+  }
+
   .underline:after {
     content: '';
     position: absolute;
@@ -230,6 +278,7 @@ p {
     margin:auto;
     border-radius: 30px;
     cursor: pointer;
+    
   }
 
   .fab {
@@ -278,7 +327,12 @@ p {
   .navtext {
     font-size: 20px;
   }
-}
-html {
-  scrollbar-gutter: stable
+
+  .images {
+    max-width: 100%;  
+    height: auto; 
+    width: 100%;  
+    margin: auto;
+    align-self: center;
+  }
 }

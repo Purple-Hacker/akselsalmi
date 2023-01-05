@@ -7,6 +7,7 @@
     <title>Aksel Salmi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&display=swap'); </style>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/bd69eab0dc.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
@@ -14,19 +15,19 @@
 </head>
 <body>
     <br>
-    <a href="/index.html"><h1 id="header">Aksel Salmi</h1></a>
+    <a href="/index.html"><h1>Aksel Salmi</h1></a>
     <hr><br>
     <nav style="display: flex;align-items: center;justify-content: center;">
-        <a class="underline u1 navtext hover-outset" href="/" id="drop1">Home</a> 
-        <a class="underline u2 navtext hover-outset" href="/about.html" id="drop2">About</a>
-        <a class="underline u3 navtext hover-outset" href="/projects.html" id="drop3">Projects</a>&nbsp;&nbsp;
-        <a class="underline u4 navtext hover-outset" id="drop4">Contact</a>
+        <a class="underline u1 navtext hover-outset" href="/">Home</a> 
+        <a class="underline u2 navtext hover-outset" href="/about.html">About</a>
+        <a class="underline u3 navtext hover-outset" href="/projects.html">Projects</a>&nbsp;&nbsp;
+        <a class="underline u4 navtext hover-outset selected">Contact</a>
     </nav>
     <p class="fade-in">Contact me here:</p>
     <a class="social-button email fade-in" href="mailto:a@akselsalmi.com"> <i class="fas fa-envelope"></i> a@akselsalmi.com</a>
 
     <p class="fade-in">Or you can find me here:</p>
-    <!--<a class="social-button yt" href="https://youtube.com/purpledhacker"><i class="fab fa-youtube"></i></a>-->
+    <a class="social-button yt" href="https://youtube.com/purpledhacker"><i class="fab fa-youtube"></i></a>
     <a class="social-button insta" href="https://instagram.com/akselsalmi"><i class="fab fa-instagram"></i></a>
     <a class="social-button steam" href="https://steamcommunity.com/id/PurpleHacker/"><i class="fab fa-steam"></i></a>
     <a class="social-button github" href-"https://github.com/Purple-Hacker"><i class="fab fa-github"></i></a>
@@ -40,6 +41,7 @@
     let drop3 = document.querySelector('#drop3')
     let drop4 = document.querySelector('#drop4')
     if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
+        header.classList.add('animate__animated', "animate__fadeInDown")
         drop1.classList.add("drop1")
         drop2.classList.add("drop2")
         drop3.classList.add("drop3")

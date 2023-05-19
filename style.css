@@ -337,4 +337,10 @@ p {
     margin: auto;
     align-self: center;
   }
+  h1 {
+    font-size:50px;
+  hr {
+    width: 75%;
+    }
+}
 }

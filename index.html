@@ -28,20 +28,5 @@
     </nav>
     <p class="fade-in">I'm Aksel, and I am <i>placeholder</i>. I love <i>placeholder</i> as well as <i>placeholder</i>.</p>
 </body>
-<script>
-    let header = document.querySelector('#header')
-    let drop1 = document.querySelector('#drop1')
-    let drop2 = document.querySelector('#drop2')
-    let drop3 = document.querySelector('#drop3')
-    let drop4 = document.querySelector('#drop4')
-    if (parseInt(localStorage.getItem('animated')) < Date.now() - 30000) {
-        header.classList.add('animate__animated', "animate__fadeInDown")
-        drop1.classList.add("drop1")
-        drop2.classList.add("drop2")
-        drop3.classList.add("drop3")
-        drop4.classList.add("drop4")
-    }
-    localStorage.setItem('animated', Date.now().toString())
-</script>
 
 </html>

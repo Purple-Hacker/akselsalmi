@@ -1,11 +1,11 @@
 :root {
   --primary: #00676d;
-  --accent: #5743b2;
+  --accent: #816aeb;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #111111;
+    background-color: #6e6387;
     text-align:center;
     color: #d8d8d8;
 }

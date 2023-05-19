@@ -110,12 +110,14 @@ p {
     border-radius: 1rem;
     width: 0.5rem; height: 0.5rem;
     background-color: rgb(46, 47, 56);
+/*
     animation-name: extend;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+*/
     align-self: center;
     width:100px; 
     margin: auto;

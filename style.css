@@ -119,7 +119,7 @@ p {
     animation-fill-mode: forwards;
 */
     align-self: center;
-    width:100px; 
+    width:50%; 
     margin: auto;
   }
   a:link { text-decoration: none; }

@@ -108,7 +108,7 @@ p {
   hr {
     border-style: none;
     border-radius: 1rem;
-    width: 0.5rem; height: 0.5rem;
+    width: 1.5rem; height: 0.5rem;
     background-color: rgb(46, 47, 56);
 /*
     animation-name: extend;

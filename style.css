@@ -203,7 +203,7 @@ p {
     width: 105%;
     transform: scaleX(0);
     transform: scaleY();
-    height: 2px;
+    height: 3px;
     bottom: 1px;
     left: 0;
     transform-origin: bottom right;
